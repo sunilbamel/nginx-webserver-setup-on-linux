@@ -1,0 +1,19 @@
+In this first  we update the all packages of linux using this command: sudo yum update
+
+After update we install nginx package on our linux using command : sudo yum install nginx
+
+After installation we check the status of nginx server using this command : sudo systemctl status nginx
+
+If the status is unactive then we can activate it using command : sudo systemctl start nginx
+
+After this we use a command to check the our server ip and this is : ifconfig
+
+Now we copy our server ip and run this ip on our browser and it will show that our nginx webserver is working properly and load first page.If it can not load page
+then we change our firewall status because by default our firewall is active so we unactive it.
+firewall status : sudo systemctl status firewall
+unactive firewall : sudo systemctl stop firewall
+Activate firewall : sudo systemctl start firewall
+
+If we want to see the code of our first page then we found this code using command :
+Go to that folder : cd /usr/share/nginx/html
+In this folder we have multiple file and also there is one file in which oure page code exist and this file name is index.html.
